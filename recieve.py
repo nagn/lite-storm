@@ -12,12 +12,10 @@ ser.port = set_port
 ser.baudrate=115200
 ser.open()
 while True:
-	try:
-	    if ser.inWaiting():
-                print ser.readline()[:-1]
-        except KeyboardInterrupt:
-	    ser.close()
-	    sys.exit(0)
-
-
-
+    #try:
+    if ser.inWaiting():
+        word = ser.readline()
+        print word,
+    #except KeyboardInterrupt:
+    #    ser.close()
+    #    sys.exit(0)

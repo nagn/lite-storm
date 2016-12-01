@@ -36,6 +36,3 @@ while True:
 	except KeyboardInterrupt:
 	    ser.close()
 	    sys.exit(0)
-
-
-
